@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FlappyBirdFull
 {
-    class Pipe
+    public class Pipe
     {
         private Vector2 position;
         private readonly int width;

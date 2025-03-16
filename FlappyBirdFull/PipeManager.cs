@@ -84,5 +84,15 @@ namespace FlappyBirdFull
             }
             return score;
         }
+
+        public bool CheckCollision(Vector2 birdPosition)
+        {
+           foreach(var pipe in Pipes)
+            {
+                if (pipe.CheckCollision(birdPosition)) return true;
+            }
+
+            return false;
+        }
     }
 }

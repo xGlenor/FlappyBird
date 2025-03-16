@@ -61,7 +61,7 @@ namespace FlappyBirdFull
 
                 pipeManager.Update();
 
-                if (bird.CheckCollisionWithGround(screenHeight) )
+                if (bird.CheckCollisionWithGround(screenHeight) || pipeManager.CheckCollision(bird.Position)) 
                 {
                     gameStatus = GameStatus.GameOver;
                 }

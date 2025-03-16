@@ -54,5 +54,6 @@ namespace FlappyBirdFull
         {
             return position.Y + size > screenHeight;
         }
+
     }
 }
